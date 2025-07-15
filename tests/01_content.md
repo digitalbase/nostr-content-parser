@@ -1,2 +1,0 @@
-I feel your frustration. Have been there. But that statement is not true and you
-know it.
