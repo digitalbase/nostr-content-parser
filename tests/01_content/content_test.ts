@@ -1,28 +1,11 @@
-import { assert, assertObjectMatch } from "jsr:@std/assert";
+import { assertObjectMatch } from "jsr:@std/assert";
 
-import { basename, extname } from "https://deno.land/std/path/mod.ts";
+import { basename } from "https://deno.land/std/path/mod.ts";
 import {parseMarkdown} from "../../src/parser.ts";
-
-
-
-function getFilenameWithoutExtension(): string | undefined {
-  if (!import.meta.filename || !import.meta.dirname) {
-    return;
-  }
-
-  // Get the basename of the file (e.g., "01_content_test.ts")
-  const baseName = basename(import.meta.filename);
-  const dirName = basename(import.meta.dirname);
-
-  // Remove the extension from the basename (e.g., "01_content_test")
-  const withoutExtension = baseName.replace(extname(baseName), "");
-
-  // Remove the "_test" suffix (if it exists)
-  return withoutExtension.replace(/_test$/, "");
-}
+import {getFilenameWithoutExtension} from "../utils.ts";
 
 Deno.test("content test", async () => {
-  const testName = getFilenameWithoutExtension();
+  const testName = getFilenameWithoutExtension(import.meta.filename ?? '');
   const dirName = basename(import.meta.dirname ?? '');
   const markDown = await Deno.readTextFile(`./tests/${dirName}/${testName}.md`);
   const json = {
