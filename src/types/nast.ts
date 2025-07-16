@@ -13,9 +13,17 @@ export interface Hashtag extends Node {
   hashtag: string;
 }
 
+export interface Link extends Node {
+  type: "link";
+  display_value: string;
+  value: string;
+  href: string;
+}
+
 export interface ContentMap {
   text: Text;
   hashtag: Hashtag;
+  link: Link;
 }
 
 export type Content = ContentMap[keyof ContentMap];
