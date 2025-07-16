@@ -4,7 +4,7 @@ import { basename } from "https://deno.land/std/path/mod.ts";
 import { parseMarkdown } from "../../src/parser.ts";
 import {getFilenameWithoutExtension} from "../../src/utils/getFilenameWithoutExtension.ts";
 
-Deno.test("multiple hashtag tests", async () => {
+Deno.test("hashtags without spaces should not match", async () => {
   const testName = getFilenameWithoutExtension(import.meta.filename ?? "");
   const dirName = basename(import.meta.dirname ?? "");
   const markDown = await Deno.readTextFile(`./tests/${dirName}/${testName}.md`);
@@ -16,11 +16,8 @@ Deno.test("multiple hashtag tests", async () => {
         children: [
           {
             type: "text",
-            value: "Anyone making chili today? What’s your secret ingredient? ",
+            value: "Anyone making chili today? What’s your secret ingredient? #foodstr#asknostr",
           },
-          { type: "hashtag", name: "foodstr", hashtag: "#foodstr" },
-          { type: "text", value: " " },
-          { type: "hashtag", name: "asknostr", hashtag: "#asknostr" },
         ],
       },
     ],

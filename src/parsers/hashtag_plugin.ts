@@ -13,8 +13,8 @@ export function hashtags(): Transformer<Root> {
   function hashtag(text: string): Hashtag {
     return {
       type: "hashtag",
-      name: text.toLowerCase().trim().replace("#", ""),
-      hashtag: text.toLowerCase().trim(),
+      name: text.replace("#", ""),
+      hashtag: text.toLowerCase(),
     } satisfies Hashtag;
   }
 
