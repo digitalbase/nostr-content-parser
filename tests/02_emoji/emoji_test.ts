@@ -2,7 +2,7 @@ import { assertObjectMatch } from "jsr:@std/assert";
 
 import { basename } from "https://deno.land/std/path/mod.ts";
 import { parseMarkdown } from "../../src/parser.ts";
-import { getFilenameWithoutExtension } from "../../src/utils/utils.ts";
+import {getFilenameWithoutExtension} from "../../src/utils/getFilenameWithoutExtension.ts";
 
 Deno.test("emoji test", async () => {
   const testName = getFilenameWithoutExtension(import.meta.filename ?? "");
@@ -17,16 +17,8 @@ Deno.test("emoji test", async () => {
           { type: "text", value: "This is " },
           { type: "text", value: "🌚" },
         ],
-        position: {
-          start: { line: 1, column: 1, offset: 0 },
-          end: { line: 1, column: 29, offset: 28 },
-        },
       },
     ],
-    position: {
-      start: { line: 1, column: 1, offset: 0 },
-      end: { line: 1, column: 29, offset: 28 },
-    },
   };
 
   const parsedMarkdown = parseMarkdown(markDown);
