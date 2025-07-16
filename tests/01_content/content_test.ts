@@ -33,10 +33,5 @@ Deno.test("content test", async () => {
   ;
 
   const parsedMarkdown = parseMarkdown(markDown);
-  console.log(parsedMarkdown);
-
   assertObjectMatch(parsedMarkdown, json);
-
-
-  console.log(json);
 });
