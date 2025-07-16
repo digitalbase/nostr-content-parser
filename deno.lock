@@ -1,19 +1,98 @@
 {
   "version": "5",
   "specifiers": {
+    "jsr:@david/code-block-writer@^13.0.2": "13.0.3",
+    "jsr:@deno/cache-dir@0.20": "0.20.1",
+    "jsr:@deno/dnt@~0.42.1": "0.42.1",
     "jsr:@std/assert@*": "1.0.13",
     "jsr:@std/assert@1": "1.0.13",
-    "jsr:@std/internal@^1.0.6": "1.0.9"
+    "jsr:@std/bytes@^1.0.5": "1.0.6",
+    "jsr:@std/fmt@1": "1.0.8",
+    "jsr:@std/fmt@^1.0.3": "1.0.8",
+    "jsr:@std/fs@1": "1.0.19",
+    "jsr:@std/fs@^1.0.6": "1.0.19",
+    "jsr:@std/internal@^1.0.6": "1.0.9",
+    "jsr:@std/internal@^1.0.9": "1.0.9",
+    "jsr:@std/io@0.225": "0.225.2",
+    "jsr:@std/path@1": "1.1.1",
+    "jsr:@std/path@^1.0.8": "1.1.1",
+    "jsr:@std/path@^1.1.1": "1.1.1",
+    "jsr:@ts-morph/bootstrap@0.25": "0.25.0",
+    "jsr:@ts-morph/common@0.25": "0.25.0"
   },
   "jsr": {
+    "@david/code-block-writer@13.0.3": {
+      "integrity": "f98c77d320f5957899a61bfb7a9bead7c6d83ad1515daee92dbacc861e13bb7f"
+    },
+    "@deno/cache-dir@0.20.1": {
+      "integrity": "dc4f3add14307f3ff3b712441ea4acabcbfc9a13f67c5adc78c3aac16ac5e2a0",
+      "dependencies": [
+        "jsr:@std/fmt@^1.0.3",
+        "jsr:@std/fs@^1.0.6",
+        "jsr:@std/io",
+        "jsr:@std/path@^1.0.8"
+      ]
+    },
+    "@deno/dnt@0.42.1": {
+      "integrity": "85322b38eb40d4e8c5216d62536152c35b1bda9dc47c8c60860610397b960223",
+      "dependencies": [
+        "jsr:@david/code-block-writer",
+        "jsr:@deno/cache-dir",
+        "jsr:@std/fmt@1",
+        "jsr:@std/fs@1",
+        "jsr:@std/path@1",
+        "jsr:@ts-morph/bootstrap"
+      ]
+    },
     "@std/assert@1.0.13": {
       "integrity": "ae0d31e41919b12c656c742b22522c32fb26ed0cba32975cb0de2a273cb68b29",
       "dependencies": [
-        "jsr:@std/internal"
+        "jsr:@std/internal@^1.0.6"
+      ]
+    },
+    "@std/bytes@1.0.6": {
+      "integrity": "f6ac6adbd8ccd99314045f5703e23af0a68d7f7e58364b47d2c7f408aeb5820a"
+    },
+    "@std/fmt@1.0.8": {
+      "integrity": "71e1fc498787e4434d213647a6e43e794af4fd393ef8f52062246e06f7e372b7"
+    },
+    "@std/fs@1.0.19": {
+      "integrity": "051968c2b1eae4d2ea9f79a08a3845740ef6af10356aff43d3e2ef11ed09fb06",
+      "dependencies": [
+        "jsr:@std/internal@^1.0.9",
+        "jsr:@std/path@^1.1.1"
       ]
     },
     "@std/internal@1.0.9": {
       "integrity": "bdfb97f83e4db7a13e8faab26fb1958d1b80cc64366501af78a0aee151696eb8"
+    },
+    "@std/io@0.225.2": {
+      "integrity": "3c740cd4ee4c082e6cfc86458f47e2ab7cb353dc6234d5e9b1f91a2de5f4d6c7",
+      "dependencies": [
+        "jsr:@std/bytes"
+      ]
+    },
+    "@std/path@1.1.0": {
+      "integrity": "ddc94f8e3c275627281cbc23341df6b8bcc874d70374f75fec2533521e3d6886"
+    },
+    "@std/path@1.1.1": {
+      "integrity": "fe00026bd3a7e6a27f73709b83c607798be40e20c81dde655ce34052fd82ec76",
+      "dependencies": [
+        "jsr:@std/internal@^1.0.9"
+      ]
+    },
+    "@ts-morph/bootstrap@0.25.0": {
+      "integrity": "3cd33ee80ac0aab8e5d2660c639a02187f0c8abfe454636ce86c00eb7e8407db",
+      "dependencies": [
+        "jsr:@ts-morph/common"
+      ]
+    },
+    "@ts-morph/common@0.25.0": {
+      "integrity": "e3ed1771e2fb61fbc3d2cb39ebbc4f89cd686d6d9bc6d91a71372be055ac1967",
+      "dependencies": [
+        "jsr:@std/fs@1",
+        "jsr:@std/path@1"
+      ]
     }
   },
   "redirects": {
@@ -82,6 +161,7 @@
     "https://esm.sh/trough@^2.0.0?target=denonext": "https://esm.sh/trough@2.2.0?target=denonext",
     "https://esm.sh/unicode-emoji-modifier-base@^1.0.0?target=denonext": "https://esm.sh/unicode-emoji-modifier-base@1.0.0?target=denonext",
     "https://esm.sh/unified@11": "https://esm.sh/unified@11.0.5",
+    "https://esm.sh/unified@11/lib/index.js": "https://esm.sh/unified@11.0.5/lib/index.js",
     "https://esm.sh/unist-util-is@^6.0.0?target=denonext": "https://esm.sh/unist-util-is@6.0.0?target=denonext",
     "https://esm.sh/unist-util-stringify-position@^4.0.0?target=denonext": "https://esm.sh/unist-util-stringify-position@4.0.0?target=denonext",
     "https://esm.sh/unist-util-visit-parents@^6.0.0?target=denonext": "https://esm.sh/unist-util-visit-parents@6.0.1?target=denonext",
@@ -295,8 +375,12 @@
     "https://esm.sh/unicode-emoji-modifier-base@1.0.0/denonext/unicode-emoji-modifier-base.mjs": "6710c8ce705060e3b12eca734b9c944e59aed0dc9d14ada6ddd2938f87a7ad16",
     "https://esm.sh/unicode-emoji-modifier-base@1.0.0?target=denonext": "4260c424249eba76a7fd0d8687faaed14a5e9ba50ea514f4f910a1c291321306",
     "https://esm.sh/unified@11.0.5": "72e30274eb07271c1cf92faffd5d33b4ecd714032bad012c1eb007ada1e11e01",
+    "https://esm.sh/unified@11.0.5/denonext/lib/index.mjs": "c536b0dfc47b673810a6ce17fd73d06ef43086bf6efdb50d862276c5775227eb",
     "https://esm.sh/unified@11.0.5/denonext/unified.mjs": "b08baaf0a903c9d7c0513975d94c6631b35781396131a409b773ab05e080570d",
+    "https://esm.sh/unified@11.0.5/lib/index.js": "9b3d8c79d4db1da374bd67ea7c2ff6d8f29d2d4ecfe67e66dad466d8a98db0e2",
+    "https://esm.sh/unist-util-is@6.0.0/denonext/lib/index.mjs": "d6f1e514c23ad6f12b0b330f45911f8d12c18dacb4c552fc0ea759880ca329d1",
     "https://esm.sh/unist-util-is@6.0.0/denonext/unist-util-is.mjs": "bbc00c612fd8daa022e50a0061856c52be17e0caa699dffa1e7b83b3bbe7b9f2",
+    "https://esm.sh/unist-util-is@6.0.0/lib/index.js": "028f0be84dbcbe54164475bf620d76a7ec00d334a1b6051f632cef188cbe733c",
     "https://esm.sh/unist-util-is@6.0.0?target=denonext": "7ac7092e893f27ed8edacb142d04dcc37169fdcfaa2ae8833a51fb9762d5e41f",
     "https://esm.sh/unist-util-stringify-position@4.0.0/denonext/unist-util-stringify-position.mjs": "1e524ff61198426bbdd72735fe7c372b83dbb1c6e5bfa9ab7d0f15268eb65c52",
     "https://esm.sh/unist-util-stringify-position@4.0.0?target=denonext": "b096f6b3c0936aeeafa56a86945fa7add4e1ec11986f61f09aabe332edab4581",
@@ -315,6 +399,7 @@
   },
   "workspace": {
     "dependencies": [
+      "jsr:@deno/dnt@~0.42.1",
       "jsr:@std/assert@1"
     ]
   }
