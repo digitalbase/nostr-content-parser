@@ -17,7 +17,7 @@ export interface Link extends Node {
   type: "link";
   display_value?: string | null;
   title?: string | null;
-  href: string;
+  url: string;
 }
 
 export interface ContentMap {
