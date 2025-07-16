@@ -20,6 +20,13 @@ export interface Link extends Node {
   url: string;
 }
 
+export interface Image extends Node {
+  type: "image";
+  display_value?: string | null;
+  title?: string | null;
+  url: string;
+}
+
 export interface ContentMap {
   text: Text;
   hashtag: Hashtag;
