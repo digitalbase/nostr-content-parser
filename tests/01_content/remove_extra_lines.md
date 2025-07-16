@@ -1,3 +1,8 @@
+
+
+
+
+
 Idk too much about this but I did do a quick deep dive before getting into it, I’m on like day 4 of downloading btc core.
 
 I’m using an old MacBook that I had laying around with a 2Tb ssd. I wanted to keep costs down and when the things fried I’ll just chuck it and get something else.
