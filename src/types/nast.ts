@@ -25,6 +25,7 @@ export interface Image extends Node {
   display_value?: string | null;
   title?: string | null;
   url: string;
+  alt?: string | null;
 }
 
 export interface ContentMap {

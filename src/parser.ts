@@ -6,15 +6,18 @@ import remarkGfm from 'https://esm.sh/remark-gfm@4';
 import { hashtags } from "./parsers/hashtag_plugin.ts";
 import {removePositionProperties} from "./utils/removePositionProperties.ts";
 import {imageLiterals} from "./parsers/image_literals_plugin.ts";
+import linkTransformImagesPlugin from "./parsers/link_transform_images_plugin.ts";
+// import {linkLiterals} from "./parsers/links_literals_plugin.ts";
 
 export function parseMarkdown(markdown: string) {
   //https://github.com/remarkjs/remark/blob/main/doc/plugins.md#list-of-plugins
   const processor = unified()
     .use(remarkParse)
     // .use(remarkImages)
-    //.use(remarkGfm)
     .use(imageLiterals)
-    //.use(linkLiterals) disabled because it's handled by GFM literal handling
+    .use(remarkGfm)
+    .use(linkTransformImagesPlugin)
+    //.use(linkLiterals)
     .use(hashtags)
     .use(remarkEmoji, { emoticon: true });
   // .use(remarkRehype)

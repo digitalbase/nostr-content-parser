@@ -22,7 +22,7 @@ function cleanUpValue(url: string): string {
   return cleanedUrl;
 }
 
-export function links(): Transformer<Root> {
+export function linkLiterals(): Transformer<Root> {
   function link(text: string): Link {
 
     const display_value = cleanUpValue(text);
