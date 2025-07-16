@@ -3,42 +3,27 @@
   "specifiers": {
     "jsr:@std/assert@*": "1.0.13",
     "jsr:@std/assert@1": "1.0.13",
-    "jsr:@std/assert@^1.0.13": "1.0.13",
-    "jsr:@std/internal@^1.0.6": "1.0.7",
-    "jsr:@std/internal@^1.0.8": "1.0.9",
-    "jsr:@std/testing@*": "1.0.14"
+    "jsr:@std/internal@^1.0.6": "1.0.9"
   },
   "jsr": {
     "@std/assert@1.0.13": {
       "integrity": "ae0d31e41919b12c656c742b22522c32fb26ed0cba32975cb0de2a273cb68b29",
       "dependencies": [
-        "jsr:@std/internal@^1.0.6"
+        "jsr:@std/internal"
       ]
-    },
-    "@std/internal@1.0.7": {
-      "integrity": "39eeb5265190a7bc5d5591c9ff019490bd1f2c3907c044a11b0d545796158a0f"
     },
     "@std/internal@1.0.9": {
       "integrity": "bdfb97f83e4db7a13e8faab26fb1958d1b80cc64366501af78a0aee151696eb8"
-    },
-    "@std/testing@1.0.14": {
-      "integrity": "144b3737105b9071cb50c957681f58a1b8ec0f3e5b19ad830f401c5fa931e8f0",
-      "dependencies": [
-        "jsr:@std/assert@^1.0.13",
-        "jsr:@std/internal@^1.0.8"
-      ]
     }
   },
   "redirects": {
     "https://deno.land/std/path/mod.ts": "https://deno.land/std@0.224.0/path/mod.ts",
     "https://esm.sh/@sindresorhus/is@^4.6.0?target=denonext": "https://esm.sh/@sindresorhus/is@4.6.0?target=denonext",
     "https://esm.sh/@types/extend@~3.0.4/index.d.ts": "https://esm.sh/@types/extend@3.0.4/index.d.ts",
-    "https://esm.sh/@types/is-url@~1.2.32/index.d.ts": "https://esm.sh/@types/is-url@1.2.32/index.d.ts",
     "https://esm.sh/bail@^2.0.0?target=denonext": "https://esm.sh/bail@2.0.2?target=denonext",
     "https://esm.sh/ccount@^2.0.0?target=denonext": "https://esm.sh/ccount@2.0.1?target=denonext",
     "https://esm.sh/char-regex@^1.0.2?target=denonext": "https://esm.sh/char-regex@1.0.2?target=denonext",
     "https://esm.sh/character-entities@^2.0.0?target=denonext": "https://esm.sh/character-entities@2.0.2?target=denonext",
-    "https://esm.sh/collapse-white-space@^2.0.0?target=denonext": "https://esm.sh/collapse-white-space@2.1.0?target=denonext",
     "https://esm.sh/decode-named-character-reference@^1.0.0?target=denonext": "https://esm.sh/decode-named-character-reference@1.2.0?target=denonext",
     "https://esm.sh/devlop@^1.0.0?target=denonext": "https://esm.sh/devlop@1.1.0?target=denonext",
     "https://esm.sh/devlop@^1.1.0?target=denonext": "https://esm.sh/devlop@1.1.0?target=denonext",
@@ -46,17 +31,13 @@
     "https://esm.sh/emoticon@^4.0.1?target=denonext": "https://esm.sh/emoticon@4.1.0?target=denonext",
     "https://esm.sh/escape-string-regexp@^5.0.0?target=denonext": "https://esm.sh/escape-string-regexp@5.0.0?target=denonext",
     "https://esm.sh/extend@^3.0.0?target=denonext": "https://esm.sh/extend@3.0.2?target=denonext",
-    "https://esm.sh/gemoji@^8.0.0?target=denonext": "https://esm.sh/gemoji@8.1.0?target=denonext",
     "https://esm.sh/is-plain-obj@^4.0.0?target=denonext": "https://esm.sh/is-plain-obj@4.1.0?target=denonext",
-    "https://esm.sh/is-url@^1.0.0?target=denonext": "https://esm.sh/is-url@1.2.4?target=denonext",
     "https://esm.sh/longest-streak@^3.0.0?target=denonext": "https://esm.sh/longest-streak@3.1.0?target=denonext",
     "https://esm.sh/markdown-table@^3.0.0?target=denonext": "https://esm.sh/markdown-table@3.0.4?target=denonext",
     "https://esm.sh/mdast-util-find-and-replace@3": "https://esm.sh/mdast-util-find-and-replace@3.0.2",
     "https://esm.sh/mdast-util-find-and-replace@^3.0.0?target=denonext": "https://esm.sh/mdast-util-find-and-replace@3.0.2?target=denonext",
     "https://esm.sh/mdast-util-find-and-replace@^3.0.1?target=denonext": "https://esm.sh/mdast-util-find-and-replace@3.0.2?target=denonext",
-    "https://esm.sh/mdast-util-from-markdown@2": "https://esm.sh/mdast-util-from-markdown@2.0.2",
     "https://esm.sh/mdast-util-from-markdown@^2.0.0?target=denonext": "https://esm.sh/mdast-util-from-markdown@2.0.2?target=denonext",
-    "https://esm.sh/mdast-util-gfm-autolink-literal@2": "https://esm.sh/mdast-util-gfm-autolink-literal@2.0.1",
     "https://esm.sh/mdast-util-gfm-autolink-literal@^2.0.0?target=denonext": "https://esm.sh/mdast-util-gfm-autolink-literal@2.0.1?target=denonext",
     "https://esm.sh/mdast-util-gfm-footnote@^2.0.0?target=denonext": "https://esm.sh/mdast-util-gfm-footnote@2.1.0?target=denonext",
     "https://esm.sh/mdast-util-gfm-strikethrough@^2.0.0?target=denonext": "https://esm.sh/mdast-util-gfm-strikethrough@2.0.0?target=denonext",
@@ -95,16 +76,13 @@
     "https://esm.sh/micromark@^4.0.0?target=denonext": "https://esm.sh/micromark@4.0.2?target=denonext",
     "https://esm.sh/node-emoji@^2.1.3?target=denonext": "https://esm.sh/node-emoji@2.2.0?target=denonext",
     "https://esm.sh/remark-emoji@5": "https://esm.sh/remark-emoji@5.0.1",
-    "https://esm.sh/remark-gemoji@7=8": "https://esm.sh/remark-gemoji@8.0.0",
     "https://esm.sh/remark-gfm@4": "https://esm.sh/remark-gfm@4.0.1",
-    "https://esm.sh/remark-images@4": "https://esm.sh/remark-images@4.1.0",
     "https://esm.sh/remark-parse@11": "https://esm.sh/remark-parse@11.0.0",
     "https://esm.sh/skin-tone@^2.0.0?target=denonext": "https://esm.sh/skin-tone@2.0.0?target=denonext",
     "https://esm.sh/trough@^2.0.0?target=denonext": "https://esm.sh/trough@2.2.0?target=denonext",
     "https://esm.sh/unicode-emoji-modifier-base@^1.0.0?target=denonext": "https://esm.sh/unicode-emoji-modifier-base@1.0.0?target=denonext",
     "https://esm.sh/unified@11": "https://esm.sh/unified@11.0.5",
     "https://esm.sh/unist-util-is@^6.0.0?target=denonext": "https://esm.sh/unist-util-is@6.0.0?target=denonext",
-    "https://esm.sh/unist-util-position@^5.0.0?target=denonext": "https://esm.sh/unist-util-position@5.0.0?target=denonext",
     "https://esm.sh/unist-util-stringify-position@^4.0.0?target=denonext": "https://esm.sh/unist-util-stringify-position@4.0.0?target=denonext",
     "https://esm.sh/unist-util-visit-parents@^6.0.0?target=denonext": "https://esm.sh/unist-util-visit-parents@6.0.1?target=denonext",
     "https://esm.sh/unist-util-visit@^5.0.0?target=denonext": "https://esm.sh/unist-util-visit@5.0.0?target=denonext",
@@ -204,8 +182,6 @@
     "https://esm.sh/char-regex@1.0.2?target=denonext": "322cfe93e2d364d9c1e2438a7a0ec29740937d81590891c31632c628d77ab908",
     "https://esm.sh/character-entities@2.0.2/denonext/character-entities.mjs": "d15396c2d78022cb26a289c75ee1fb7aaa556334bb24ff7b1ca3634a2770c4ef",
     "https://esm.sh/character-entities@2.0.2?target=denonext": "2d10b2ddc9c8e2977f63c2906c25adb68ed7e9bea396059d011463aa067149b9",
-    "https://esm.sh/collapse-white-space@2.1.0/denonext/collapse-white-space.mjs": "894fb43a3cc72a5f66a826eff43cd1783c33b48a8a42e77c1b42cfb7d27f0f19",
-    "https://esm.sh/collapse-white-space@2.1.0?target=denonext": "2b5fd6f943dc13a5c07082f25ab6be66749b046a2ecfe6da5fd4f6d70108d37a",
     "https://esm.sh/decode-named-character-reference@1.2.0/denonext/decode-named-character-reference.mjs": "e22611bbd1fcac8a1bed55aa4a15f8b54de6d78e2672eb587c5933a7c33e28ea",
     "https://esm.sh/decode-named-character-reference@1.2.0?target=denonext": "bf96e1ea9065f49b54ef2c82835d682593fe8afe9d260529ab5cfb44f316e355",
     "https://esm.sh/devlop@1.1.0/denonext/devlop.mjs": "c510d1d2f0a44e17c6658ab69e0e93264c5652fcd2f230e528470248c24047e6",
@@ -218,12 +194,8 @@
     "https://esm.sh/escape-string-regexp@5.0.0?target=denonext": "a04bd35da97b7bb95120eb6923dcd64751185568d333fa6a64a1ca0be2b4feac",
     "https://esm.sh/extend@3.0.2/denonext/extend.mjs": "2fcb45893e5be70d629e3c4c6f3100ee1bba03bc672ece1d4ae57c3b88db3a71",
     "https://esm.sh/extend@3.0.2?target=denonext": "35f0cb416b1c2975321f6cfc0fc0e9ae13d3a83fe90705718880f502a2e22ea4",
-    "https://esm.sh/gemoji@8.1.0/denonext/gemoji.mjs": "993ff8cd2b16faa9e3aea612398fc4e2766b57b801419167d237cf0afdce318f",
-    "https://esm.sh/gemoji@8.1.0?target=denonext": "fe57211f6f0043bd7c4041ac945c16e3dfe12ce5b116ef4d07188b0f80b49a36",
     "https://esm.sh/is-plain-obj@4.1.0/denonext/is-plain-obj.mjs": "b2148bf350315cbc1ea1a04b358367e4daf3a9da53a634220d7f1a42e110ed4e",
     "https://esm.sh/is-plain-obj@4.1.0?target=denonext": "1816dcb650ccabbf582c01010105a7d09d5138a4745be4d10d21efba5d2513ee",
-    "https://esm.sh/is-url@1.2.4/denonext/is-url.mjs": "ca78e328a3fd5bba0cda14971def00be9603aaa0633cf11c173fe7579f182fe8",
-    "https://esm.sh/is-url@1.2.4?target=denonext": "a03d65ed43f004f2a9d23fe146230553101d8aeec4e249edf1bffb90cfd98713",
     "https://esm.sh/longest-streak@3.1.0/denonext/longest-streak.mjs": "b3679e1f871189395c1e60417470b1767daa360e32a7a9081eee269652f6784a",
     "https://esm.sh/longest-streak@3.1.0?target=denonext": "69d6d4513a1bd54b0451a0801722bb82196c0e0af39b50301b2c4cc77bc6672e",
     "https://esm.sh/markdown-table@3.0.4/denonext/markdown-table.mjs": "c7d81a7a273381ec526b7c49ca14dc5955143cd62c3b5771eb46b9a19ba58d15",
@@ -231,10 +203,8 @@
     "https://esm.sh/mdast-util-find-and-replace@3.0.2": "b336fbe701983244677c8d2eb46c5b1be1b2fb8e5fccd3035c469cc830b5583e",
     "https://esm.sh/mdast-util-find-and-replace@3.0.2/denonext/mdast-util-find-and-replace.mjs": "62f870c04e7057b035726f84c528684ba28f19c2100c9adf40dd523282323133",
     "https://esm.sh/mdast-util-find-and-replace@3.0.2?target=denonext": "b336fbe701983244677c8d2eb46c5b1be1b2fb8e5fccd3035c469cc830b5583e",
-    "https://esm.sh/mdast-util-from-markdown@2.0.2": "2687f8fb508708e37de6d7531894d5472223e3b76fde684fdfb178f2ac101ceb",
     "https://esm.sh/mdast-util-from-markdown@2.0.2/denonext/mdast-util-from-markdown.mjs": "1177962b4e41eedffa8f46b06584c43a84591cf03641ab6b890318e9471f750a",
     "https://esm.sh/mdast-util-from-markdown@2.0.2?target=denonext": "2687f8fb508708e37de6d7531894d5472223e3b76fde684fdfb178f2ac101ceb",
-    "https://esm.sh/mdast-util-gfm-autolink-literal@2.0.1": "b91de657004a6edd61e11dbbbf7c0a37f4c942e956e3102dd0e5a6a87ceb3260",
     "https://esm.sh/mdast-util-gfm-autolink-literal@2.0.1/denonext/mdast-util-gfm-autolink-literal.mjs": "8aee21bdd773c79ffb10799b9dc0dbcea276c9217a1b04a1c28a31e2edc9f0c1",
     "https://esm.sh/mdast-util-gfm-autolink-literal@2.0.1?target=denonext": "b91de657004a6edd61e11dbbbf7c0a37f4c942e956e3102dd0e5a6a87ceb3260",
     "https://esm.sh/mdast-util-gfm-footnote@2.1.0/denonext/mdast-util-gfm-footnote.mjs": "9d738ccacbb0539e6ade2a842353e41d6a475173ed6a4897fd5961ba07101718",
@@ -314,16 +284,10 @@
     "https://esm.sh/node-emoji@2.2.0?target=denonext": "3aed621213531c8e75cf6a58b9ae92058808dbbf42886b601cda04a52bd363af",
     "https://esm.sh/remark-emoji@5.0.1": "596ffe021d06002ebde1bd7b4c180db6315e657414387de67651a79e66b433f9",
     "https://esm.sh/remark-emoji@5.0.1/denonext/remark-emoji.mjs": "1585e265e82960d193b99dfa587d2de24e5ff735df5a512ed9c658ea269f9362",
-    "https://esm.sh/remark-gemoji@8.0.0": "8c34794eae81bcc979478124c56347850f02fb7f538a6f86e2ec9194781a55c5",
-    "https://esm.sh/remark-gemoji@8.0.0/denonext/remark-gemoji.mjs": "481034ef9522feead177a1b2cd3b18f777f6648174630e61c17281be1a894c0f",
     "https://esm.sh/remark-gfm@4.0.1": "724cef40a5f759ace713744e504c94205ec9ef5e858c991176ab9a2616cdfca4",
     "https://esm.sh/remark-gfm@4.0.1/denonext/remark-gfm.mjs": "3ade91bcda9fa1896e746c5f9313ade69bf19b38940ff3e6965da21c53697622",
-    "https://esm.sh/remark-images@4.1.0": "1cae2e59c28d964c3f6db61b830e884a90e8dc2f0ff301ce41a91b8a025da816",
-    "https://esm.sh/remark-images@4.1.0/denonext/remark-images.mjs": "c5f585a4f6b434b9f1382eb2996d94a12a3a631379e3b1d3f29f25a0ea500943",
     "https://esm.sh/remark-parse@11.0.0": "f281dbd72bbffef14d203ae8d7f06ff88c5f04890e3546bd15aac84f9753e2cc",
-    "https://esm.sh/remark-parse@11.0.0/denonext/lib/index.mjs": "ed2d1df9d8bbef44fbc209cbd262509df84ae93cbc6b5cac13348c855bdae511",
     "https://esm.sh/remark-parse@11.0.0/denonext/remark-parse.mjs": "45f932d8db3742e527bbffa83c0c22dd9a16c01febe0c5083e048681a542aef0",
-    "https://esm.sh/remark-parse@11.0.0/lib/index.js": "ae9c362533a607e70c6645a6853d7ada0226790666dd0003b5a0a11a594f0769",
     "https://esm.sh/skin-tone@2.0.0/denonext/skin-tone.mjs": "c991702b134ed2d84e302abd817c222411e1731fe333c1e73f09959b9394bed0",
     "https://esm.sh/skin-tone@2.0.0?target=denonext": "7291a17ad9145052e907046b1cec4406123d7d1d39f2b7ae19d8595e8e846344",
     "https://esm.sh/trough@2.2.0/denonext/trough.mjs": "fada5c5b43a3812bc17588a3ff3db5bafb276d50fb97ec8f06bc74f93dca76fb",
@@ -334,8 +298,6 @@
     "https://esm.sh/unified@11.0.5/denonext/unified.mjs": "b08baaf0a903c9d7c0513975d94c6631b35781396131a409b773ab05e080570d",
     "https://esm.sh/unist-util-is@6.0.0/denonext/unist-util-is.mjs": "bbc00c612fd8daa022e50a0061856c52be17e0caa699dffa1e7b83b3bbe7b9f2",
     "https://esm.sh/unist-util-is@6.0.0?target=denonext": "7ac7092e893f27ed8edacb142d04dcc37169fdcfaa2ae8833a51fb9762d5e41f",
-    "https://esm.sh/unist-util-position@5.0.0/denonext/unist-util-position.mjs": "f6b47f550945fd73b9ec29789ad9928dad64163906511b9ce1fb6f1063d4b620",
-    "https://esm.sh/unist-util-position@5.0.0?target=denonext": "3a9921d02dfc1dfe7ba72f260ec5d7bca2da381c8a9a345b15f9a191523a7b8f",
     "https://esm.sh/unist-util-stringify-position@4.0.0/denonext/unist-util-stringify-position.mjs": "1e524ff61198426bbdd72735fe7c372b83dbb1c6e5bfa9ab7d0f15268eb65c52",
     "https://esm.sh/unist-util-stringify-position@4.0.0?target=denonext": "b096f6b3c0936aeeafa56a86945fa7add4e1ec11986f61f09aabe332edab4581",
     "https://esm.sh/unist-util-visit-parents@6.0.1/denonext/do-not-use-color.mjs": "94b57609e52050f8d615ab3d096a2efb7183053a494dee89f9af2fe6c8fb9f0b",
