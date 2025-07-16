@@ -30,7 +30,7 @@ export function links(): Transformer<Root> {
     return {
       type: "link",
       display_value,
-      value: text,
+      title: null,
       href: text,
     } satisfies Link;
   }

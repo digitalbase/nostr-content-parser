@@ -4,7 +4,7 @@ import { basename } from "https://deno.land/std/path/mod.ts";
 import { parseMarkdown } from "../../src/parser.ts";
 import {getFilenameWithoutExtension} from "../../src/utils/getFilenameWithoutExtension.ts";
 
-Deno.test("emphasis", async () => {
+Deno.test("markdown link", async () => {
   const testName = getFilenameWithoutExtension(import.meta.filename ?? "");
   const dirName = basename(import.meta.dirname ?? "");
   const markDown = await Deno.readTextFile(`./tests/${dirName}/${testName}.md`);

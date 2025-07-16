@@ -15,8 +15,8 @@ export interface Hashtag extends Node {
 
 export interface Link extends Node {
   type: "link";
-  display_value: string;
-  value: string;
+  display_value?: string | null;
+  title?: string | null;
   href: string;
 }
 

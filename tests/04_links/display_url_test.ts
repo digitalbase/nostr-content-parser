@@ -26,7 +26,7 @@ Deno.test("clean up the display url", async () => {
           {
             type: "link",
             display_value: 'thepioneerwoman.com/food-cooking/recipes/a38665019/instant-pot-chili-recipe',
-            value: "https://www.thepioneerwoman.com/food-cooking/recipes/a38665019/instant-pot-chili-recipe/",
+            title: null,
             href: "https://www.thepioneerwoman.com/food-cooking/recipes/a38665019/instant-pot-chili-recipe/"
           }
         ]

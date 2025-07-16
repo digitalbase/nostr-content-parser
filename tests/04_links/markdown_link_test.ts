@@ -4,38 +4,27 @@ import { basename } from "https://deno.land/std/path/mod.ts";
 import { parseMarkdown } from "../../src/parser.ts";
 import {getFilenameWithoutExtension} from "../../src/utils/getFilenameWithoutExtension.ts";
 
-Deno.test("parse single url", async () => {
+Deno.test("clean up the display url", async () => {
   const testName = getFilenameWithoutExtension(import.meta.filename ?? "");
   const dirName = basename(import.meta.dirname ?? "");
   const markDown = await Deno.readTextFile(`./tests/${dirName}/${testName}.md`);
   const json = {
-    type: "root",
-    children: [
-      {
-        type: "paragraph",
+        type: "root",
         children: [
           {
-            type: "text",
-            value: "I’ve used this recipe and added two teaspoons of smoked paprika."
+            type: "paragraph",
+            children: [
+              { type: "text", value: "Here is " },
+              {
+                type: "link",
+                title: null,
+                url: "https://bitcoin.org",
+              }
+            ]
           }
         ]
-      },
-      {
-        type: "paragraph",
-        children: [
-          {
-            type: "link",
-            title: null,
-            href: "https://www.thepioneerwoman.com/food-cooking/recipes/a38665019/instant-pot-chili-recipe/"
-          }
-        ]
-      },
-      {
-        type: "paragraph",
-        children: [ { type: "text", value: "The smoked paprika makes it." } ]
       }
-    ]
-  };
+  ;
 
   const parsedMarkdown = parseMarkdown(markDown);
 
